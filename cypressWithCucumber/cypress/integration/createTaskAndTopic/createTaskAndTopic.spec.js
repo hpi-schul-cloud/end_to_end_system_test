@@ -1,7 +1,7 @@
 // Adding a new task
 
 Given('I am logged in as a teacher', () => {
-    cy.teacherlogin()
+    cy.teacherLogin()
 })
 
 When('I visit the room board', () => {
@@ -17,11 +17,11 @@ Then('I am able to create a task in the old task creation page', () => {
 // Adding a new topic
 
 Given('I am logged in as a teacher', () => {
-    cy.teacherlogin()
+    cy.teacherLogin()
 })
 
 When('I visit the room board', () => {
-    cy.goTOCourseOverview()
+    cy.goToCourseOverview()
     cy.selectCourse()
     cy.goToRoomOverviewBoard()
 })
@@ -33,11 +33,11 @@ Then('I am able to create a task in the old task creation page', () => {
 // Student can not create and import task and topic
 
 Given('I am logged in as a student', () => {
-    cy.studentlogin()
+    cy.studentLogin()
 })
 
 When('I visit the room board', () => {
-    cy.goTOCourseOverview()
+    cy.goToCourseOverview()
     cy.selectCourse()
     cy.goToRoomOverviewBoard()
 })
