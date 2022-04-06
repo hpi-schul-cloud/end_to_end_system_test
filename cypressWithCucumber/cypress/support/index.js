@@ -16,7 +16,8 @@
 // Import commands.js using ES2015 syntax:
 import './commands'
 import './logins/allLogins'
-import'./access-room-board/goingToRoomBoard'
+import './room-board-overview/goingToRoomBoard'
+import './room-board-overview/createTaskAndTopic'
 
 
 // Alternatively you can use CommonJS syntax:
