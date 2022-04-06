@@ -1,4 +1,4 @@
-Cypress.Commands.add('goTOCourseOverview',()=>{
+Cypress.Commands.add('goToCourseOverview',()=>{
    
 })
 

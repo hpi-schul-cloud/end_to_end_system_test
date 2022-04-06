@@ -5,7 +5,7 @@ Given('I am logged in as a teacher', () => {
 })
 
 When('I visit the room board', () => {
-    cy.goTOCourseOverview()
+    cy.goToCourseOverview()
     cy.selectCourse()
     cy.goToRoomOverviewBoard()
 })
@@ -42,6 +42,6 @@ When('I visit the room board', () => {
     cy.goToRoomOverviewBoard()
 })
 
-Then('I should not able to create or import tasks or topic', () => {
+Then('I should not be able to create or import tasks or topic', () => {
     cy.expectNoCreateFABButton()
 })
