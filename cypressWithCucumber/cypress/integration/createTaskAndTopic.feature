@@ -5,21 +5,17 @@ Feature: Add task or topic to the room board by the teacher
     Scenario: Adding a new task
         Given I am logged in as a teacher
         When I visit the room board
-        Then I am able to create a task
+        Then I am able to create a task in the old task creation page   //to be maintained until when migrating to the nuxt
 
-        When I create a new task
-        Then the old task creation page is being used   //to be maintained late when migrating to the nuxt
 
     Scenario: Adding a new topic
         Given I am logged in as a teacher
         When I visit the room board
-        Then I am able to create a lesson
+        Then I am able to create a topic in the old topic creation page //to be maintained until when migrating to the nuxt
 
-        When I create a new lesson
-        Then the old lesson creation page is being used
 
     Scenario: Student can not create and import task and topic
         Given I am logged in as a student
         When I visit the room board
-        Then I can`t create or import tasks or lessons
+        Then I should not able to create or import tasks or topic
 
