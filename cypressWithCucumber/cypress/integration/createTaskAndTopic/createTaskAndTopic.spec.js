@@ -42,6 +42,6 @@ When('I visit the room board', () => {
     cy.goToRoomOverviewBoard()
 })
 
-Then('I should not be able to create or import tasks or topic', () => {
+Then('I should not be able to create or import tasks or topics', () => {
     cy.expectNoCreateFABButton()
 })

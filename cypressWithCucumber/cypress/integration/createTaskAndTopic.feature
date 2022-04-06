@@ -17,5 +17,4 @@ Feature: Add task or topic to the room board by the teacher
     Scenario: Student can not create and import task and topic
         Given I am logged in as a student
         When I visit the room board
-        Then I should not be able to create or import tasks or topic
-
+        Then I should not be able to create or import tasks or topics

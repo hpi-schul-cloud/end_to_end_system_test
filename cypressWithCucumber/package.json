@@ -174,10 +174,7 @@
   "author": "",
   "license": "ISC",
 
-  "cypress-cucumber-preprocessor": { 
+  "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true
   }
-  
 }
-
-

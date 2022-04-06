@@ -1,4 +1,3 @@
-
 Given('I am on the login page', () => {
     const url = 'https://nbc-main.cd.dbildungscloud.dev'
     cy.visit(url)

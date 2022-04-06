@@ -7,6 +7,3 @@ Feature: Login to the NBC Schulcloud as a Main Teacher
         When I enter email and password
         And I click on login button
         Then I see the home page
-
-
-    
