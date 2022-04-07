@@ -4,7 +4,7 @@ Feature: Add course, topic or task to the room board by the teacher
 
     Scenario: Adding a new course
         Given I am logged in as a teacher
-        When I visit the rooms overview
+        When I visit the room overview
         Then I am able to create a course in the old course creation page
 
 
@@ -13,7 +13,7 @@ Feature: Add course, topic or task to the room board by the teacher
         When I visit the rooms overview
         When I visit the room view
         When I add a topic
-        Then I am able to create a topic in the old topic creation page
+        Then I am able to create a new topic in the old topic creation page
         #last steps fails or isn't reached at the moment due to an error inside the calendar o.O
 
 

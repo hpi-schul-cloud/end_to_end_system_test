@@ -4,12 +4,12 @@ Given('I am logged in as a teacher', () => {
     cy.teacherLogin()
 })
 
-When('I visit the rooms overview', () => {
-    cy.goToRoomsOverview()
+When('I visit the course overview', () => {
+    cy.goToCourseOverview()
 })
 
-Then('I am able to create a course in the old course creation page', () => {
-    cy.goToCreateRoom()
+Then('I am able to create a new course in the old course creation page', () => {
+    cy.goToCreateCourse()
     cy.expectOldCourseCreationPageAndCreateNewCourse()
 })
 
