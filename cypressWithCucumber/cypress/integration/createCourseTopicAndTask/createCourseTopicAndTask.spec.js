@@ -1,4 +1,4 @@
-// Adding a new course
+// Adding a new topic
 
 Given('I am logged in as a teacher', () => {
     cy.teacherLogin()
@@ -8,22 +8,13 @@ When('I visit the rooms overview', () => {
     cy.goToRoomsOverview()
 })
 
-Then('I am able to create a course in the old course creation page', () => {
-    cy.goToCreateRoom()
-    cy.expectOldCourseCreationPageAndCreateNewCourse()
+When('I visit the room board', () => {
+    cy.selectRoom()
+    cy.goToRoomBoard()
 })
-
-// Going to the room view
-
-When('I visit the room view', () => {
-    cy.selectCourse()
-    cy.goToRoomView()
-})
-
-// Adding a new topic
 
 When('I add a topic', () => {
-    cy.goToCreateTopic()
+    cy.clickOnCreateTopic()
 })
 
 Then('I am able to create a topic in the old topic creation page', () => {
@@ -32,8 +23,17 @@ Then('I am able to create a topic in the old topic creation page', () => {
 
 // Adding a new task
 
+When('I visit the rooms overview',()=>{
+    cy.goToRoomsOverview()
+})
+
+When('I visit the room board', () => {
+    cy.selectRoom()
+    cy.goToRoomBoard()
+})
+
 When('I add a task', () => {
-    cy.goToCreateTask()
+    cy.clickOnCreateTask()
 })
 
 Then('I am able to create a task in the old task creation page', () => {
