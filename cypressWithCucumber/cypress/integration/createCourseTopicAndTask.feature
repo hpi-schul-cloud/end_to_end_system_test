@@ -1,26 +1,20 @@
-Feature: Add course, topic or task to the room board by the teacher
+Feature: Add course, topic or task to the room board by the teacher 
 
     As a teacher, I want to add tasks and topic directly on the board so that I don't have to jump back and forth between pages.
-
-    Scenario: Adding a new course
-        Given I am logged in as a teacher
-        When I visit the room overview
-        Then I am able to create a course in the old course creation page
 
 
     Scenario: Adding a new topic
         Given I am logged in as a teacher
         When I visit the rooms overview
-        When I visit the room view
+        When I visit the room board
         When I add a topic
         Then I am able to create a new topic in the old topic creation page
         #last steps fails or isn't reached at the moment due to an error inside the calendar o.O
 
 
     Scenario: Adding a new task
-        Given I am logged in as a teacher
         When I visit the rooms overview
-        When I visit the room view
+        When I visit the room board
         When I add a task
         Then I am able to create a task in the old task creation page
 
@@ -28,5 +22,5 @@ Feature: Add course, topic or task to the room board by the teacher
     Scenario: Student can not create and import topics or tasks
         Given I am logged in as a student
         When I visit the rooms overview
-        When I visit the room view
+        When I visit the room board
         Then I should not be able to create or import topics or tasks
